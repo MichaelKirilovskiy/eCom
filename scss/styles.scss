@@ -1,0 +1,271 @@
+@import 'fonts';
+@import 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+p{
+  color: rgb(135, 135, 135);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7em;
+}
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+    background: #efeeee;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.wrapper{
+    background-color: #fff;
+    max-width: 1260px;
+    margin: 0 auto 30px;
+}
+
+
+.row{
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.card{
+  padding: 0 10px;
+  width: 270px;
+  border: 1px solid #e5e5e5;
+  margin: 15px;
+  
+  
+  &-image{
+
+    position: absolut;
+    margin-top: -20px;
+    border: 1px solid #e5e5e5;
+    line-height: 0;
+    height: 250px;
+    overflow: hidden;
+    background-color: #fff;
+    
+
+    img{
+      margin: 10px auto 20px;
+      display: block;
+    }
+    
+  .card-lableholder{
+
+    display: flex;
+    position: relative;
+    z-index: 10;
+    top: -120px;
+    
+      .card-lable{
+        width: 70px;
+        height: 36px;
+        color: #fff;
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 36px;
+        text-transform: uppercase;
+        
+    &-sale{
+
+      background: #ed1111;
+      //display: none;
+
+    }
+    &-new{
+
+      background: #0a0a0a;
+      margin-left: auto;
+      
+
+    }
+  }    
+  }
+}
+  &-body{
+
+    .card-title{
+
+      margin-top: 16px;
+    }
+    .card-description{
+
+      margin-top: 10px;
+
+    }
+
+    .card-price{
+
+      display: flex;
+
+      &-main{
+        color: #333;
+        font-size: 1.4em;
+        font-weight: 600;
+      }
+      &-old{
+        text-decoration: line-through;
+        line-height: 2.3em;
+        color: #ed1111;
+        margin-left: 20px;
+      }
+    }
+
+    .card-buttons{
+
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      .card-button{
+
+        width: 120px;
+        height: 36px;
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 36px;
+        text-transform: uppercase;
+        border: 1px solid #e5e5e5;
+        padding: 0;
+        background-color: #fff;
+      }
+
+      .card-button-add{
+
+        color: #ed1111;
+        font-weight: bold;
+
+        &:hover{
+
+          background-color: #ed8e8e;
+  
+        }
+
+      }
+
+      .card-button-view{
+
+        color: #999e9f;
+        background-color: #d9d9d9;
+
+      }
+
+
+    }
+  }
+}
+.card:hover{
+
+  box-shadow: 0 5px 10px 1px rgba(60,60,60,0.35);
+}
+
+.btn-loadmore{
+
+  width: 120px;
+  height: 36px;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  padding: 0;
+  color: #ed1111;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 38px auto;
+
+  &:hover{
+
+    background-color: #c5cacb;
+
+  }
+
+}
+
+.footer{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 50px;
+
+  &-col{
+
+    flex-basis: 370px;
+    border: 1px solid #e5e5e5;
+    padding: 46px 24px;
+    margin: 0 15px;
+
+    h3{
+
+      text-transform: uppercase;
+      
+    }
+
+    .hotoffer{
+
+
+      color: rgb(135, 135, 135);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.7em;
+      margin: 0 0 15px 20px;
+      position: relative;
+      
+
+      &::before{
+  
+        content: ''; 
+        position: absolute;
+        left: -20px; top: 2px;
+        // /* Положение треугольника */
+        border: 5px solid transparent; 
+        // /* Прозрачные границы */
+        border-left: 4px solid #ed1111; 
+        // /* Добавляем треугольник */
+    
+    }
+
+
+    }
+
+    i{
+
+      margin: 30px auto 10px 42px;
+    
+    }
+    
+    .fa-solid,.fa-brands{
+          color: rgb(135, 135, 135);
+          font-family: 'Open Sans', sans-serif;
+          font-size: 0.8em;
+          position: relative;
+    }
+    .fa-solid::before,.fa-brands::before{
+      color: red;
+      font-size: 2em;
+      position: absolute;
+      top: -8px;
+      left: -38px;
+    }
+    
+
+  }
+
+
+}
